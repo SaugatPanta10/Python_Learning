@@ -13,6 +13,5 @@ while True:
     elif choice.lower() == "no":
         print("Thank you for choosing us. Bye!")
         break
-
     else:
         print("Please enter either yes or no.")
