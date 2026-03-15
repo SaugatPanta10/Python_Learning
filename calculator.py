@@ -37,7 +37,8 @@ while True:
         if ask.lower() == "yes":
             break
         elif ask.lower() == "no":
-            break
+            print("Thank you for using our calculator. Bye!")
+            exit()
         else:
             print("Please enter either yes or no.")
             continue
