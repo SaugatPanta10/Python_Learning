@@ -1,6 +1,11 @@
-while True:
+while True: 
     try:
         a = int(input("Enter the value of a: "))
-        break  
+        b = int(input("Enter the value of b: "))
+        result = a//b
+        print(f"When divided {a} by {b}, The result is: {result}")
+        break
+    except ZeroDivisionError:
+        print("cannot divide by 0. Please enter another value.")
     except ValueError:
-        print("Invalid Input ! please enter numbers only.")
+        print("Invalid input. Please enter integers only. ")

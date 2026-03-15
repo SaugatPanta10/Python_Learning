@@ -1,19 +1,25 @@
+
 print("Welcome to our calculator")
-a = int(input("Enter the first number: "))
-op = input("Enter the operator:(+ or - or * or /)")
-b = int(input("Enter the second number: "))
+while True:
+    try:
+        a = int(input("Enter the first number:"))
+        break
+    except ValueError:
+        print("Invalid Input! Enter the integers only.")
 
-if op == "+":
-    print("The result is: ", a+b)
+    op = input("Enter the operator (+,-,*,/):")
+    b = int(input("Enter the second number:"))
 
-elif op == "-":
-    print("The result is: ", a-b)
+    if op == "+":
+        print(f"When added {a} with {b}, the result is {a+b}")
 
-elif op == "*":
-    print("The result is: ", a*b)
+    elif op == "-":
+        print(f"When subtracted {a} with {b}, the result is {a-b}")
 
-elif op == "/":
-    if b==0:
-        print("Cannot divide by zero. Please give the value of b other than 0.")
-    else:
-        print("The result is: ", a/b)
+    elif op == "*":
+        print(f"When multiplied {a} with {b}, the result is {a*b}")
+
+    elif op == "/":
+        print(f"When divided {a} with {b}, the result is {a/b}")
+
+
