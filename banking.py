@@ -1,3 +1,4 @@
+balance = 1000
 while True:
     print("Welcome to Nabil Bank")
     print("1. Check Balance")
@@ -5,7 +6,6 @@ while True:
     print("3. Withdraw Money")
     print("4. Exit")
 
-    balance = 1000
     while True:
         choice = (input("Enter the option above 1/2/3/4 : "))
         if choice not in ("1", "2", "3", "4"):
@@ -20,13 +20,15 @@ while True:
             elif choice == "2":
                 dep = int(input("Enter how much of money you would like to deposit: "))
                 balance = balance + dep
+                print(f"{dep} successfully deposited.")
                 print(f" Your current balance is {balance}.")
                 break
                 
             elif choice == "3":
                 wit = int(input("Enter the amount that you want to withdraw: "))
                 balance = balance - wit
-                print(f" Your current balance is {balance}.")
+                print(f"{wit} successfully withdrawn.")
+                print(f"Your current balance is {balance}.")
                 break
 
             elif choice == "4":
