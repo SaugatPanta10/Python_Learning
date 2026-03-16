@@ -5,6 +5,4 @@ while True:
         print("Logged in. ")
         break
     else:
-        print("Incorrect password. Please try it again.")
-        
-
+        print("Incorrect password. Please try it again.")       
