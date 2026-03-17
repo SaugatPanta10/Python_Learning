@@ -1,4 +1,4 @@
-while True: 
+while True:
     while True:
         try:
             a = int(input("Enter the value of a: "))
