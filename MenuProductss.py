@@ -41,13 +41,14 @@ while True:
         print("-------Product Search----------")
 
         search_name = input("Enter the product name that you want to search: ").strip().lower()
-        if search_name in products["Name"].strip().lower():
-            print("-------Product found---------")
-            print(f"""
-                    "Name": {products["Name"]},
-                    "Price":{products["Price"]},
-                    "Description":{products["Description"]}
-                """)
+        for product in products:
+            if search_name in product["Name"].strip().lower():
+                print("-------Product found---------")
+                print(f"""
+                        "Name": {product["Name"]},
+                        "Price":{product["Price"]},
+                        "Description":{product["Description"]}
+                    """)
             
     elif user_choice == "4":
         print("Thank you for using our services.")
