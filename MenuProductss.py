@@ -45,9 +45,9 @@ while True:
             if search_name in product["Name"].strip().lower():
                 print("-------Product found---------")
                 print(f"""
-                        "Name": {product["Name"]},
-                        "Price":{product["Price"]},
-                        "Description":{product["Description"]}
+                        Name: {product["Name"]},
+                        Price:{product["Price"]},
+                        Description:{product["Description"]}
                     """)
             
     elif user_choice == "4":
