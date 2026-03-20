@@ -1,5 +1,7 @@
-def add(*saugat):
-    for item in saugat:
-        print(item)
+def saugat(**samikshya):
+    for key, value in samikshya.items(): 
+        print(f" {key}: {value}")
 
-add(1,2,3,4,"saugat") 
+
+
+saugat(name = "kalpana", age= 48, address= "padajungi")
