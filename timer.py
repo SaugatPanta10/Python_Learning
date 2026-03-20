@@ -1,7 +1,12 @@
 import time 
 import os 
+import subprocess
+from datetime import datetime
 
-for timer in range(10,0,-1):
-    os.system("cls")
-    print(timer)
-    time.sleep(1)
+today = datetime.now().time()
+print(today)
+
+# for timer in range(10,0,-1):
+#     subprocess.system('cls')
+#     print(timer)
+#     time.sleep(1)
