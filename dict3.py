@@ -1,9 +1,9 @@
-dict = {
-    "name": "saugat",
-    "age": 20,
-    "address": "padajungi"
-    }
+# products = [{"name": "saugat","age":20,"address": "Padajungi"},
+#             {"name": "badal","age": 18,"address": "baliya"},
+#             {"name": "bibek","age": 18,"address": "sankhuwasabha"}]
 
-for key, value in dict.items():
+# for i in products:
+#     print(i['name'])
 
-    print(f" {key}: {value}")
+a = {"name": "saugat","age":20,"address": "Padajungi"}
+print(a["name"])
